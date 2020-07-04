@@ -1,0 +1,85 @@
+@media (max-width : 1150px)
+  .menu
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      margin-left: auto
+      margin-right: 10px
+      span
+        position: absolute
+        content: ''
+        background-color: #000000
+        width: 100%
+        height: 2px
+        left: 0
+        top: 9px
+      &::after, &::before
+        position: absolute
+        content: ''
+        background-color: #000000
+        width: 100%
+        height: 2px
+        left: 0
+      &::after
+        bottom: 0
+      &::before
+        top: 0
+    &__logo
+      img
+        margin-top: 10px
+    &__btn
+      display: block
+      z-index: 1
+    &__mail
+      &-burgermail
+        display: block
+        z-index: 1
+        margin: 0 16px
+  .mail
+    &__group
+      display: flex
+      align-items: center
+      a
+        color: #397DFF
+    &__title
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 27px
+      color: #2B2D3A
+  .nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #EBEEF5
+    margin: 0
+    padding-top: 65px
+    &__item
+      margin-right: 0
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+      letter-spacing: 0.01em
+      &::after
+        display: none
+  ul
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 15px 16px
+  li
+    border-bottom: 1px solid rgba(43, 45, 58, 0.1)
+    padding-bottom: 19px
+    padding-top: 31px
+    display: flex
+    align-items: center
+  .imgburger
+    display: block
+    margin-right: 31px
+  .logo
+    z-index: 1
+    padding: 0 16px

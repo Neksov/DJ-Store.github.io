@@ -1,0 +1,96 @@
+@media (max-width: 1150px) {
+  .menu__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 10px; }
+    .menu__burger span {
+      position: absolute;
+      content: '';
+      background-color: #000000;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 9px; }
+    .menu__burger::after, .menu__burger::before {
+      position: absolute;
+      content: '';
+      background-color: #000000;
+      width: 100%;
+      height: 2px;
+      left: 0; }
+    .menu__burger::after {
+      bottom: 0; }
+    .menu__burger::before {
+      top: 0; }
+  .menu__logo img {
+    margin-top: 10px; }
+  .menu__btn {
+    display: block;
+    z-index: 1; }
+  .menu__mail-burgermail {
+    display: block;
+    z-index: 1;
+    margin: 0 16px; }
+  .mail__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .mail__group a {
+      color: #397DFF; }
+  .mail__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2B2D3A; }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EBEEF5;
+    margin: 0;
+    padding-top: 65px; }
+    .nav__item {
+      margin-right: 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.01em; }
+      .nav__item::after {
+        display: none; }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 15px 16px; }
+  li {
+    border-bottom: 1px solid rgba(43, 45, 58, 0.1);
+    padding-bottom: 19px;
+    padding-top: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .imgburger {
+    display: block;
+    margin-right: 31px; }
+  .logo {
+    z-index: 1;
+    padding: 0 16px; } }
