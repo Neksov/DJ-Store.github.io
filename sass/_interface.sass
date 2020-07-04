@@ -1,0 +1,64 @@
+.btn
+  padding: 0.5rem 1.3rem
+  border: none
+  font-weight: 500
+  box-sizing: border-box
+  text-transform: uppercase
+  border-radius: 35px
+  transition: box-shadow 0.3s
+  cursor: pointer
+  font-style: normal
+  font-size: 14px
+  line-height: 132.69%
+  letter-spacing: 0.035em
+  background: #26B475
+  box-shadow: 0px 0px 15px rgba(38, 180, 117, 0.5)
+  border-radius: 7px
+  color: $light
+  &--light
+    background: #F6FBFE
+    box-shadow: 0px 4px 10px rgba(6, 6, 6, 0.1)
+    border: 1px solid #26B475
+    box-sizing: border-box
+    border-radius: 10px
+    padding: 0.25rem 1.16rem
+    font-size: 12px
+    line-height: 14px
+    color: #26B475
+    text-transform: none
+  &:hover
+    box-shadow: none
+  &:active, &:focus 
+    outline: none
+.green 
+  color: $green
+.blocktitle
+  margin: auto
+  width: 872px
+  height: 111px
+  font-style: normal
+  font-weight: bold
+  font-size: 34px
+  line-height: 45px
+  text-align: center
+  letter-spacing: 0.035em
+  color: #242424
+  position: relative
+  padding-bottom: 100px
+  &::after
+    display: flex
+    position: absolute
+    content: ''
+    width: 219px
+    height: 2px
+    background: #26B475
+    left: 37.5%
+    bottom: 0
+label
+  &.invalid
+    position: absolute
+    margin-top: 53px
+    color: $black
+input
+  &.invalid
+    border-bottom: 1px solid $primary    
