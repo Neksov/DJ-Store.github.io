@@ -329,7 +329,8 @@ body {
   font-size: 16px;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #E5E5E5; }
 
 .container {
   width: 100%;
@@ -551,7 +552,7 @@ li {
   line-height: 16px;
   color: #2B2D3A; }
 
-.imgburger {
+.imgburger, .imgburger2 {
   display: none; }
 
 @media (max-width: 1150px) {
@@ -681,6 +682,9 @@ li {
   .imgburger {
     display: block;
     margin-right: 31px; }
+  .imgburger2 {
+    display: block;
+    margin-right: 39px; }
   .logo {
     z-index: 1;
     padding: 0 16px; } }
