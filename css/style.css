@@ -555,6 +555,28 @@ li {
 .imgburger, .imgburger2 {
   display: none; }
 
+.conference {
+  padding-top: 160px;
+  padding-bottom: 160px; }
+
+.swiper-container {
+  width: 100%;
+  height: 624px; }
+
+.swiper-slide {
+  background: url(../img/conference.jpg) no-repeat center/cover;
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 @media (max-width: 1150px) {
   body.lock {
     overflow: hidden; }
@@ -565,7 +587,8 @@ li {
     height: 20px;
     margin-left: auto;
     margin-right: 10px;
-    margin-top: -22px; }
+    margin-top: -22px;
+    cursor: pointer; }
     .menu__burger span {
       position: absolute;
       content: '';
