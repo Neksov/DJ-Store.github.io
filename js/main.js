@@ -11,18 +11,44 @@ $(document).ready(function () {
       "active"
     );
   });
-  //слайдер
-  var swiper = new Swiper('.swiper-container', {
+  //слайдер__1
+  var swiper = new Swiper(".swiper-container__First", {
     spaceBetween: 30,
-    effect: 'fade',
+
+    effect: "fade",
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
+  //слайдер__2
+  var swiper = new Swiper(".swiper-container__Second", {
+    slidesPerView: 2,
+    speed: 900,
+    loop: true,
+    cssMode: true,
+    spaceBetween: 200,
+    direction: getDirection(),
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
 
+  });
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+    return direction;
+  }
 });

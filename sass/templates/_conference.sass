@@ -1,6 +1,7 @@
 .conference
   padding-top: 160px
   padding-bottom: 160px
+  overflow: hidden
   &__btn
     margin-top: 3.5rem
     &-blue
@@ -8,17 +9,23 @@
 .swiper-container 
   width: 100%
   height: 624px
+  &__First
+    position: relative
+    background: url(../img/conference.jpg) no-repeat center/cover
+  &__Second
+    position: absolute
+    top: 360px
+    height: 200px
+    width: 500px
+    right: 30px
+
 .swiper-slide 
   text-align: center
   font-size: 18px
   display: flex
   justify-content: center
   align-items: center
-.slide
-  display: flex
-  justify-content: space-between
-.swiper-slideFirst
-  background: url(../img/conference.jpg) no-repeat center/cover
+
 .swiper-slideSecond
   background: url(../img/conference2.jpg) no-repeat center/cover
 .swiper-slideThird
@@ -26,6 +33,18 @@
 .swiper-slideFourth
   background: url(../img/conference4.jpg) no-repeat center/cover
 
+.slide
+  display: flex
+  justify-content: space-between
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,.2)
+    z-index: -2
 .info
   font-style: normal
   color: #FFFFFF
@@ -90,11 +109,34 @@
     background-repeat: no-repeat
     background-position: center
 .number
+  font-style: normal
+  margin-top: -10px
+  margin-right: -159px
+ 
   display: flex
+  flex-direction: column
+  align-items: flex-start
+  position: relative
   &__order
-    font-style: normal
     font-weight: bold
     font-size: 64px
     line-height: 78px
     letter-spacing: 0.02em
     color: #397DFF
+  &__text
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: rgba(255, 255, 255, 0.7)
+    width: 282px
+    text-align: left
+  &::after
+    position: absolute
+    content: ''
+    display: block
+    width: 205px
+    height: 0px
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    transform: rotate(90deg)
+    right: -141px
+    top: 104px
