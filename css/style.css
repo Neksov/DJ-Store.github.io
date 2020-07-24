@@ -698,6 +698,81 @@ li {
     right: -141px;
     top: 104px; }
 
+.gallery {
+  background: #EBEEF5;
+  height: 786px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .gallery__left {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    background: #DAE3F6;
+    height: 620px;
+    position: relative; }
+  .gallery__right {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    background: url(../img/rightfoto.jpg) no-repeat center/cover;
+    height: 620px;
+    position: relative; }
+
+.voice {
+  position: absolute;
+  left: 422px;
+  top: 100px; }
+
+.voice2 {
+  position: absolute;
+  left: 156px;
+  top: 179px; }
+
+.shadow {
+  position: absolute;
+  left: 180px;
+  top: 369px; }
+
+.evleft {
+  position: absolute;
+  left: 170px;
+  top: 70px;
+  z-index: 1; }
+
+.evright {
+  position: absolute;
+  right: 230px;
+  top: 75px;
+  z-index: 1; }
+
+.circle {
+  position: absolute;
+  right: 230px;
+  top: 75px;
+  cursor: pointer;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  z-index: 2; }
+  .circle:hover {
+    background: url(../img/sum.png) no-repeat center/cover; }
+
+.circle2 {
+  position: absolute;
+  left: 170px;
+  top: 70px;
+  cursor: pointer;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  z-index: 2; }
+  .circle2:hover {
+    background: url(../img/sum.png) no-repeat center/cover; }
+
 @media (max-width: 1150px) {
   body.lock {
     overflow: hidden; }
