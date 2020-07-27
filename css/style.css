@@ -809,7 +809,9 @@ li {
     .menu__burger::before {
       top: 0; }
   .menu .active {
-    top: 0; }
+    top: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
     .menu .active::before {
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -821,52 +823,60 @@ li {
     .menu .active span {
       -webkit-transform: scale(0);
       transform: scale(0); }
+  .menu .active2 {
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    overflow: auto;
+    background-color: #EBEEF5; }
   .menu__logo img {
     margin-top: 10px; }
   .menu__btn {
     display: block;
-    z-index: 1;
     top: -400%;
     position: relative;
-    -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out; }
-  .menu__mail-burgermail {
-    display: block;
-    z-index: 1;
-    margin: 0 16px;
-    top: -400%;
-    position: relative;
-    -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out; }
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out; }
+  .menu__mail {
+    display: none; }
+    .menu__mail-burgermail {
+      display: block;
+      z-index: 1;
+      margin: 0 16px;
+      top: -400%;
+      position: relative;
+      -webkit-transition: all .8s ease-in-out;
+      transition: all .8s ease-in-out; }
   .menu__list {
     top: -400%;
     position: relative;
-    -webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out; }
-  .mail__group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .mail__group a {
-      color: #397DFF; }
-  .mail__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-    color: #2B2D3A; }
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out; }
+  .menu__contacts {
+    display: none; }
+  .mail {
+    background-color: #EBEEF5; }
+    .mail__group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .mail__group a {
+        color: #397DFF; }
+    .mail__title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: #2B2D3A; }
   .nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #EBEEF5;
     margin: 0;
-    overflow: auto;
     padding-top: 65px; }
     .nav__item {
       margin-right: 0;
