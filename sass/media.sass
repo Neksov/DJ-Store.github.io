@@ -56,19 +56,23 @@
       position: relative
       transition: all .8s ease-in-out
       border: none
+
     &__mail
       display: none
       &-burgermail
         display: block
         z-index: 1
-        margin: 0 16px
+        padding: 20px 16px
         top: -400%
         position: relative
         transition: all .8s ease-in-out
+        background-color: #EBEEF5
+
     &__list
       top: -400%
       position: relative
       transition: all .8s ease-in-out
+      background-color: #EBEEF5
     &__contacts
       display: none
   .mail
@@ -100,7 +104,6 @@
       letter-spacing: 0.01em
       &::after
         display: none
-
   ul
     display: flex
     justify-content: center
@@ -119,5 +122,5 @@
     display: block
     margin-right: 39px    
   .logo
-    z-index: 1
     padding: 0 16px
+    z-index: 1

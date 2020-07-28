@@ -67,16 +67,18 @@
     .menu__mail-burgermail {
       display: block;
       z-index: 1;
-      margin: 0 16px;
+      padding: 20px 16px;
       top: -400%;
       position: relative;
       -webkit-transition: all .8s ease-in-out;
-      transition: all .8s ease-in-out; }
+      transition: all .8s ease-in-out;
+      background-color: #EBEEF5; }
   .menu__list {
     top: -400%;
     position: relative;
     -webkit-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out; }
+    transition: all .8s ease-in-out;
+    background-color: #EBEEF5; }
   .menu__contacts {
     display: none; }
   .mail {
@@ -141,5 +143,5 @@
     display: block;
     margin-right: 39px; }
   .logo {
-    z-index: 1;
-    padding: 0 16px; } }
+    padding: 0 16px;
+    z-index: 1; } }
