@@ -60,7 +60,8 @@
     top: -400%;
     position: relative;
     -webkit-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out; }
+    transition: all .8s ease-in-out;
+    border: none; }
   .menu__mail {
     display: none; }
     .menu__mail-burgermail {
