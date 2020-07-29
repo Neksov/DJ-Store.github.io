@@ -1,0 +1,101 @@
+.callback
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100% //от родительского блока body 
+  background-color: rgba($black ,0.8 ) //прозрачность 60%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: auto
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    width: 538px
+    height: 407px
+    background: #FFFFFF
+    box-shadow: 12px 10px 24px rgba(165, 165, 165, 0.12)
+    border-radius: 16px
+    padding-top: 10px
+    padding-left: 42px
+    padding-right: 32px
+  &__close
+    position: absolute
+    right: 5px
+    top: 5px
+    width: 18px
+    height: 18px
+    background: transparent url(../img/close.svg) no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+    outline: none
+  &__title
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 29px
+    color: #2B2D3A
+    letter-spacing: 0.5px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 160%
+    color: #2B2D3A
+    margin-top: -10px
+  &__btn
+    margin-top: 30px
+    width: 454px
+    height: 52px
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+    border: none
+    background: #397DFF
+    box-shadow: 0px 6px 24px rgba(85, 104, 255, 0.12)
+  &__checkbox
+    width: 11px
+    height: 10px
+    margin-right: 3px
+    cursor: pointer
+  &__label
+    margin-right: 28px
+    cursor: pointer
+  &__policy
+    display: inline-block
+    color: $black
+    font-size: 12px
+    font-weight: 400
+    letter-spacing: 0.3px
+    cursor: pointer
+.dataperson
+  color: #397DFF
+  cursor: pointer
+#checkBoxModal-error
+  position: absolute
+  display: block
+  margin-top: 5px
+  color: $primary
+  font-size: 12px
+
+#callback-user-name-error
+  position: absolute
+  display: block
+  margin-top: -17px
+  color: $primary
+  font-size: 12px
+#callback-user-phone-error
+  position: absolute
+  display: block
+  margin-top: -17px
+  color: $primary
+  font-size: 12px
+

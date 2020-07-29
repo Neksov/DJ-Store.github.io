@@ -60,7 +60,7 @@
         </div>
         <div class="contacts menu__contacts">
           <span class="contacts__group"> <img src="img/phone.png" alt="phone"></span>
-          <span class="contacts__group"> <a href="" class="contacts__call">Обратный звонок</a>
+          <span class="contacts__group"> <span class="contacts__call" data-toggle="callback">Обратный звонок</span>
             <a href="tel:+78126156279" class="phone contacts__phone">
               8 812 615-62-79</a></span>
         </div>
@@ -88,7 +88,7 @@
                       Профессиональное оборудование для конференц-залов предназначено для проведения и организации
                       презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.
                     </div>
-                    <button class="btn btn--light conference__btn">Обратный звонок</button>
+                    <button class="btn btn--light conference__btn" data-toggle="callback">Обратный звонок</button>
                     <button class="btn btn--blue conference__btn conference__btn-blue">Заполнить бриф</button>
                   </div>
                 </div>
@@ -108,7 +108,7 @@
                       Профессиональное оборудование для конференц-залов предназначено для проведения и организации
                       презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.
                     </div>
-                    <button class="btn btn--light conference__btn">Обратный звонок</button>
+                    <button class="btn btn--light conference__btn" data-toggle="callback">Обратный звонок</button>
                     <button class="btn btn--blue conference__btn conference__btn-blue">Заполнить бриф</button>
                   </div>
                 </div>
@@ -128,7 +128,7 @@
                       Профессиональное оборудование для конференц-залов предназначено для проведения и организации
                       презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.
                     </div>
-                    <button class="btn btn--light conference__btn">Обратный звонок</button>
+                    <button class="btn btn--light conference__btn" data-toggle="callback">Обратный звонок</button>
                     <button class="btn btn--blue conference__btn conference__btn-blue">Заполнить бриф</button>
                   </div>
                 </div>
@@ -148,7 +148,7 @@
                       Профессиональное оборудование для конференц-залов предназначено для проведения и организации
                       презентаций, совещаний, бизнес-тренингов и онлайн-трансляции контента.
                     </div>
-                    <button class="btn btn--light conference__btn">Обратный звонок</button>
+                    <button class="btn btn--light conference__btn" data-toggle="callback">Обратный звонок</button>
                     <button class="btn btn--blue conference__btn conference__btn-blue">Заполнить бриф</button>
                   </div>
                 </div>
@@ -226,6 +226,7 @@
     </section>
     <!-- /.gallery -->
   </main>
+  <!-- Модальне окно callback-->
   <div class="callback">
     <div class="callback__dialog">
       <button class="callback__close"></button>
@@ -239,17 +240,88 @@
             placeholder="Имя*" maxlength="30" />
         </div>
         <div class="input-group callback__input-group">
-          <input type="phone" autocomplete="off" name="userPhone" class="input form__input callback__input"
-            id="callback-user-phone" placeholder="Телефон*" maxlength="30" />
+          <input type="tel" autocomplete="off" name="userPhone" class="input form__input callback__input"
+            id="callback-user-phone" placeholder="Телефон*" maxlength="16" />
         </div>
         <div class="input-group callback__input-group">
-          <input type="text" name="userPassword" class="input form__input callback__input" id="callback-user-password"
-            placeholder="password" maxlength="30" />
+          <div class="policy callback__policy">
+            <input type="checkbox" name="checkBoxModal" id="callback-policy-checkbox" class="policy__checkbox"
+              checked />
+            <label for="callback-policy-checkbox" class="policy__label callback__policy-label">Я согласен с условиями
+              обработки
+            </label>
+            <span class="dataperson" data-toggle="consent">персональных данных</span>
+          </div>
         </div>
-        <button class="btn btn--light callback__btn">
-          SIGN UP
+        <button class="btn callback__btn">
+          Отправить
         </button>
       </form>
+    </div>
+  </div>
+  <div class="consent">
+    <div class="consent__dialog">
+      <button class="consent__close"></button>
+      <div class="consent__content">
+        <h3 class="consent__header">
+          Предоставляя свои персональные данные Пользователь даёт согласие на
+          обработку, хранение и использование своих персональных данных на
+          основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. в
+          следующих целях:
+        </h3>
+        <ul class="consent__list">
+          <li>Осуществление клиентской поддержки</li>
+          <li>Получения Пользователем информации о маркетинговых событиях</li>
+          <li>
+            Проведения аудита и прочих внутренних исследований с целью
+            повышения качества предоставляемых услуг.
+          </li>
+        </ul>
+        <h3 class="consent__header">
+          Под персональными данными подразумевается любая информация личного
+          характера, позволяющая установить личность Пользователя/Покупателя
+          такая как:
+        </h3>
+        <ul class="consent__list">
+          <li>Фамилия, Имя, Отчество</li>
+          <li>Дата рождения</li>
+          <li>Контактный телефон</li>
+          <li>Адрес электронной почты</li>
+          <li>Почтовый адрес</li>
+        </ul>
+        <div class="consenr__text">
+          Персональные данные Пользователей хранятся исключительно на
+          электронных носителях и обрабатываются с использованием
+          автоматизированных систем, за исключением случаев, когда
+          неавтоматизированная обработка персональных данных необходима в
+          связи с исполнением требований законодательства.
+        </div>
+        <h3 class="consent__header">
+          Компания обязуется не передавать полученные персональные данные
+          третьим лицам, за исключением следующих случаев:
+        </h3>
+        <ul class="consent__list">
+          <li>
+            По запросам уполномоченных органов государственной власти РФ
+            только по основаниям и в порядке, установленным законодательством
+            РФ
+          </li>
+          <li>
+            Стратегическим партнерам, которые работают с Компанией для
+            предоставления продуктов и услуг, или тем из них, которые помогают
+            Компании реализовывать продукты и услуги потребителям. Мы
+            предоставляем третьим лицам минимальный объем персональных данных,
+            необходимый только для оказания требуемой услуги или проведения
+            необходимой транзакции.
+          </li>
+        </ul>
+        <h3 class="consent__header">
+          Компания оставляет за собой право вносить изменения в одностороннем
+          порядке в настоящие правила, при условии, что изменения не
+          противоречат действующему законодательству РФ. Изменения условий
+          настоящих правил вступают в силу после их публикации на Сайте.
+        </h3>
+      </div>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
