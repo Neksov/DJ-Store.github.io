@@ -226,6 +226,32 @@
     </section>
     <!-- /.gallery -->
   </main>
+  <div class="callback">
+    <div class="callback__dialog">
+      <button class="callback__close"></button>
+      <h3 class="callback__title">
+        Готовы обсудить проект?
+      </h3>
+      <p class="callback__text">Заполните форму ниже и мы свяжемся с вами.</p>
+      <form action="callback.php" method="POST" class="form callback__form">
+        <div class="input-group callback__input-group">
+          <input type="text" name="userName" class="input form__input callback__input" id="callback-user-name"
+            placeholder="Имя*" maxlength="30" />
+        </div>
+        <div class="input-group callback__input-group">
+          <input type="phone" autocomplete="off" name="userPhone" class="input form__input callback__input"
+            id="callback-user-phone" placeholder="Телефон*" maxlength="30" />
+        </div>
+        <div class="input-group callback__input-group">
+          <input type="text" name="userPassword" class="input form__input callback__input" id="callback-user-password"
+            placeholder="password" maxlength="30" />
+        </div>
+        <button class="btn btn--light callback__btn">
+          SIGN UP
+        </button>
+      </form>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
