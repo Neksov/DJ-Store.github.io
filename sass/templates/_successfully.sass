@@ -1,0 +1,62 @@
+.successfully
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100% //от родительского блока body 
+  background-color: rgba($black ,0.8 ) //прозрачность 60%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: auto
+  &--visible
+    opacity: 1
+    visibility: visible
+  &__dialog
+    position: relative
+    width: 538px
+    height: 407px
+    background: #FFFFFF
+    box-shadow: 12px 10px 24px rgba(165, 165, 165, 0.12)
+    border-radius: 16px
+    padding-top: 10px
+    padding-left: 42px
+    padding-right: 32px
+  &__close
+    position: absolute
+    right: 5px
+    top: 5px
+    width: 18px
+    height: 18px
+    background: transparent url(../img/close.svg) no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+    outline: none
+  &__title
+    width: 446px
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 162%
+    letter-spacing: 0.5px
+    text-align: center
+  &__btn
+    margin-top: 12px
+    margin-bottom: 40px
+    width: 454px
+    height: 52px
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+    border: none
+    background: #397DFF
+    box-shadow: 0px 6px 24px rgba(85, 104, 255, 0.12)
+  &__img
+    display: block
+    margin: auto
+    padding-top: 34px

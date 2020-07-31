@@ -1,21 +1,17 @@
 $(document).ready(function () {
   //бургер меню
   $(".menu__burger").click(function (event) {
-    $(
-      ".menu__burger, .menu__list, .menu__mail, .menu__btn"
-    ).toggleClass("active");
+    $(".menu__burger, .menu__list, .menu__mail, .menu__btn").toggleClass(
+      "active"
+    );
     $("body").toggleClass("lock");
-    $(
-      ".nav"
-    ).toggleClass("active2");
+    $(".nav").toggleClass("active2");
   });
   $(".nav__item").click(function (event) {
     $(".menu__list, .menu__burger, .menu__mail, .menu__btn").removeClass(
       "active"
     );
-    $(
-      ".nav"
-    ).removeClass("active2");
+    $(".nav").removeClass("active2");
   });
   //слайдер__1
   var swiper = new Swiper(".swiper-container__First", {
@@ -48,7 +44,6 @@ $(document).ready(function () {
         swiper.changeDirection(getDirection());
       },
     },
-
   });
 
   function getDirection() {
@@ -59,9 +54,13 @@ $(document).ready(function () {
   }
 
   //callback
-  let callback = $(".callback"); //помещаем модальное окно 
+  let callback = $(".callback"); //помещаем модальное окно
   CallbackBtn = $("[data-toggle = callback]");
   closeBtnCallback = $(".callback__close");
+  //successfully
+  let successfully = $(".successfully"); //помещаем модальное окно
+  SuccessfullyBtn = $("[data-toggle = successfully]");
+  closeBtnSuccessfully = $(".successfully__close");
 
   //согласие
   let consent = $(".consent");
@@ -88,6 +87,29 @@ $(document).ready(function () {
   $(document).click(function (e) {
     if ($(e.target).is(".callback")) {
       callback.toggleClass("callback--visible");
+    }
+  });
+
+  //successfully
+  SuccessfullyBtn.on("click", function () {
+    //присваееваем класс
+    successfully.toggleClass("successfully--visible");
+  });
+
+  closeBtnSuccessfully.on("click", function () {
+    //присваееваем класс
+    successfully.toggleClass("successfully--visible");
+  });
+  //закрытие по esc
+  $(document).keyup("click", function (event) {
+    if (event.which == "27") {
+      $(".successfully").removeClass("successfully--visible");
+    }
+  });
+  // закрытие по клику вне окна
+  $(document).click(function (e) {
+    if ($(e.target).is(".successfully")) {
+      successfully.toggleClass("successfully--visible");
     }
   });
 
