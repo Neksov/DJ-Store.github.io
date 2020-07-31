@@ -894,6 +894,8 @@ li {
     background: #397DFF;
     -webkit-box-shadow: 0px 6px 24px rgba(85, 104, 255, 0.12);
     box-shadow: 0px 6px 24px rgba(85, 104, 255, 0.12); }
+    .callback__btn:hover {
+      opacity: 0.8; }
   .callback__checkbox {
     width: 11px;
     height: 10px;
@@ -1055,6 +1057,8 @@ li {
     background: #397DFF;
     -webkit-box-shadow: 0px 6px 24px rgba(85, 104, 255, 0.12);
     box-shadow: 0px 6px 24px rgba(85, 104, 255, 0.12); }
+    .successfully__btn:hover {
+      opacity: 0.8; }
   .successfully__img {
     display: block;
     margin: auto;

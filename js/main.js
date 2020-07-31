@@ -61,6 +61,7 @@ $(document).ready(function () {
   let successfully = $(".successfully"); //помещаем модальное окно
   SuccessfullyBtn = $("[data-toggle = successfully]");
   closeBtnSuccessfully = $(".successfully__close");
+  okSuccessfully = $(".successfully__btn");
 
   //согласие
   let consent = $(".consent");
@@ -97,7 +98,9 @@ $(document).ready(function () {
   });
 
   closeBtnSuccessfully.on("click", function () {
-    //присваееваем класс
+    successfully.toggleClass("successfully--visible");
+  });
+  okSuccessfully.on("click", function () {
     successfully.toggleClass("successfully--visible");
   });
   //закрытие по esc
@@ -170,7 +173,8 @@ $(document).ready(function () {
         data: $(".callback__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
         success: function (response) {
           $(form)[0].reset(); // чистит поля после отправки формы
-          $(".callback").fadeIn();
+          modal.removeClass("callback--visible");
+          $(".successfully").fadeIn();
         },
       });
     },
